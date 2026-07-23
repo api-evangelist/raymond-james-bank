@@ -45,6 +45,8 @@ apis:
   - type: Documentation
     url: https://www.raymondjamesbank.com/privacy-and-security-statements
 common:
+- type: DomainSecurity
+  url: security/raymond-james-bank-domain-security.yml
 - type: Website
   url: https://www.raymondjamesbank.com/
 - type: About
@@ -57,6 +59,8 @@ common:
   url: https://www.raymondjamesbank.com/terms-of-use
 - type: Support
   url: https://www.raymondjamesbank.com/more/contact-us
+- type: Login
+  url: https://www.raymondjamesbank.com/account-login
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
