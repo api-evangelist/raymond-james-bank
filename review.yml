@@ -1,0 +1,71 @@
+aid: raymond-james-bank
+name: Raymond James Bank
+review:
+  question: Does Raymond James Bank expose a public first-party developer API, downloadable specs, or a documented FDX / Section 1033 data-access posture?
+  answer: false
+  date: '2026-07-23'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    Raymond James Bank publishes no first-party public developer API. The
+    developer.raymondjamesbank.com subdomain does not resolve (DNS/connection
+    failure), and the public site (https://www.raymondjamesbank.com/, HTTP 200)
+    exposes no "Developers" or "APIs" surface, no API reference, and no
+    downloadable OpenAPI/Swagger specification. The bank is a Florida-chartered
+    state member bank and a subsidiary of Raymond James Financial, Inc. (NYSE:
+    RJF), supervised by the Federal Reserve and the Florida Office of Financial
+    Regulation. Consumer-permissioned data access is aggregator-mediated only:
+    Open Banking Tracker lists Plaid as the connectivity path and lists "No API
+    products" for the bank. No direct FDX (Financial Data Exchange) membership
+    and no stated CFPB Section 1033 (Personal Financial Data Rights) posture are
+    publicly documented for this specific institution. No authentication model
+    (OAuth2/OIDC/API-key/mTLS) applies because no first-party API surface exists.
+    No spec was harvested; none is publicly available.
+  openFinancePosture:
+    firstPartyDeveloperPortal: false
+    developerPortalProbe: developer.raymondjamesbank.com does not resolve (connection failed)
+    downloadableSpecs: false
+    fdxParticipant: undocumented
+    section1033Posture: undocumented
+    aggregatorAccess:
+      - Plaid
+    authModel: none (no first-party API)
+    specProvenance: none harvested
+  transports:
+    - protocol: REST
+      scheme: https
+      documented: false
+      note: No public REST API is documented for Raymond James Bank.
+    - protocol: FDX
+      documented: false
+      note: No FDX-conformant data-access API is publicly documented for this institution.
+  urlsProbed:
+    - url: https://www.raymondjamesbank.com/
+      status: 200
+      note: Public marketing/banking site; no developer or API surface.
+    - url: https://developer.raymondjamesbank.com/
+      status: 000
+      note: Does not resolve (no such host / connection failed).
+    - url: https://www.raymondjamesbank.com/terms-of-use
+      status: 200
+    - url: https://www.raymondjamesbank.com/privacy-and-security-statements
+      status: 200
+    - url: https://www.raymondjamesbank.com/more/contact-us
+      status: 200
+sources:
+  - url: https://www.raymondjamesbank.com/
+    type: Website
+    note: Public site; no developer portal or API documentation present.
+  - url: https://www.openbankingtracker.com/provider/raymond-james-bank
+    type: Reference
+    note: "Lists 'No API products' for Raymond James Bank; aggregator access via Plaid."
+  - url: https://www.federalreserve.gov/consumerscommunities/files/raymond-james-strategic-plan.pdf
+    type: Reference
+    note: Federal Reserve document confirming Raymond James Bank charter/supervision.
+actions:
+  apisYmlUpdated: true
+  reason: |
+    Identity-only (built-stub) record. No public first-party API surface,
+    no downloadable specification, and no documented FDX/1033 posture exist to
+    harvest. apis.yml records the honest aggregator-only (Plaid) reality and
+    verified public web links; no fabricated host, spec, or endpoint was added.

@@ -1,0 +1,62 @@
+aid: raymond-james-bank
+url: https://raw.githubusercontent.com/api-evangelist/raymond-james-bank/refs/heads/main/apis.yml
+name: Raymond James Bank
+kind: company
+description: >-
+  Raymond James Bank is a Florida-chartered state member bank headquartered in
+  St. Petersburg, Florida, and a wholly owned subsidiary of Raymond James
+  Financial, Inc. (NYSE: RJF), a diversified financial services holding company
+  founded in 1962. Supervised by the Federal Reserve and the Florida Office of
+  Financial Regulation, the bank provides securities-based lending, residential
+  mortgages, commercial and industrial and commercial real estate loans, tax-exempt
+  loans, and deposit products (including its Enhanced Savings Program) primarily to
+  Raymond James wealth-management and institutional clients. On open finance, the
+  bank runs no first-party public developer portal and publishes no downloadable
+  API specifications; consumer-permissioned account data is reachable only
+  indirectly through third-party aggregators such as Plaid. No FDX participation or
+  CFPB Section 1033 data-access posture is publicly documented for this institution
+  as of this record.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Financial Services
+- Banking
+- United States
+- Wealth Management
+- Securities-Based Lending
+- Open Finance
+- Data Aggregation
+created: '2026-07-23'
+modified: '2026-07-23'
+specificationVersion: '0.19'
+apis:
+- aid: raymond-james-bank:raymond-james-bank-data-access
+  name: Raymond James Bank Consumer Data Access (Aggregator-Only)
+  description: >-
+    Raymond James Bank exposes no first-party public API. Consumer-permissioned
+    account and transaction data is available only indirectly through third-party
+    data aggregators (e.g., Plaid). This entry is an honest pointer to the bank's
+    public web presence; there is no documented developer portal, base URL, or
+    downloadable specification.
+  humanURL: https://www.raymondjamesbank.com/
+  tags:
+  - Data Aggregation
+  - Open Finance
+  properties:
+  - type: Documentation
+    url: https://www.raymondjamesbank.com/privacy-and-security-statements
+common:
+- type: Website
+  url: https://www.raymondjamesbank.com/
+- type: About
+  url: https://www.raymondjamesbank.com/more/about-us
+- type: Blog
+  url: https://www.raymondjamesbank.com/more/news-and-media
+- type: PrivacyPolicy
+  url: https://www.raymondjamesbank.com/privacy-and-security-statements
+- type: TermsOfService
+  url: https://www.raymondjamesbank.com/terms-of-use
+- type: Support
+  url: https://www.raymondjamesbank.com/more/contact-us
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
