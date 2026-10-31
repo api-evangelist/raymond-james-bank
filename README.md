@@ -1,4 +1,4 @@
-# Raymond James Bank (raymond-james-bank)
+# Raymond James Bank
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,58 +64,87 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Raymond James Bank is a Florida-chartered state member bank headquartered in St. Petersburg, Florida, and a wholly owned subsidiary of Raymond James Financial, Inc. (NYSE: RJF). It provides securities-based lending, residential mortgages, commercial and commercial real estate loans, tax-exempt loans, and deposit products primarily to Raymond James wealth-management and institutional clients.
+Raymond James Bank is a Florida-chartered state member bank headquartered in St. Petersburg, Florida, and a wholly owned subsidiary of Raymond James Financial, Inc. (NYSE: RJF), a diversified financial services holding company founded in 1962. Supervised by the Federal Reserve and the Florida Office of Financial Regulation, the bank provides securities-based lending, residential mortgages, commercial and industrial and commercial real estate loans, tax-exempt loans, and deposit products (including its Enhanced Savings Program) primarily to Raymond James wealth-management and institutional clients. On open finance, the bank runs no first-party public developer portal and publishes no downloadable API specifications; consumer-permissioned account data is reachable only indirectly through third-party aggregators such as Plaid. No FDX participation or CFPB Section 1033 data-access posture is publicly documented for this institution as of this record.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/raymond-james-bank/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/raymond-james-bank/refs/heads/main/apis.yml)
+**Areas:** Financial Services · Banking · United States · Wealth Management · Securities-Based Lending · Open Finance
 
-## Open Finance / API Posture
+## Raymond James Bank on APIs.io
 
-Raymond James Bank runs **no first-party public developer portal** and publishes **no downloadable OpenAPI/Swagger specifications**. The `developer.raymondjamesbank.com` subdomain does not resolve, and no "Developers"/"APIs" surface exists on the public site.
+Everything profiled for Raymond James Bank is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/raymond-james-bank/](https://apis.io/providers/raymond-james-bank/)** — or go straight to one of the APIs or properties below.
 
-Consumer-permissioned account data is reachable **only indirectly through third-party data aggregators** — Plaid is the documented connectivity path (per Open Banking Tracker). No direct FDX (Financial Data Exchange) participation and no stated CFPB Section 1033 data-access posture are publicly documented for this institution as of this record. This is the honest, non-fabricated reality for most US regional banks: open-finance access is aggregator-mediated, not first-party.
+### APIs (1)
 
-## Tags
+- [Raymond James Bank Consumer Data Access (Aggregator-Only)](https://apis.io/apis/raymond-james-bank/raymond-james-bank-data-access/) — Raymond James Bank exposes no first-party public API. Consumer-permissioned account and transaction data is available only indirectly through third-party…
 
-- Financial Services
-- Banking
-- United States
-- Wealth Management
-- Securities-Based Lending
-- Open Finance
-- Data Aggregation
+### Published properties
 
-## Timestamps
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- **Created:** 2026-07-23
-- **Modified:** 2026-07-23
+#### Security (1)
 
-## APIs
+Authentication, trust centre, and vulnerability disclosure.
 
-### Raymond James Bank Consumer Data Access (Aggregator-Only)
+- [Raymond James Bank Domain Security](https://apis.io/security/raymond-james-bank/raymond-james-bank-domain-security/)
 
-Raymond James Bank exposes no first-party public API. Consumer-permissioned account and transaction data is available only indirectly through third-party data aggregators (e.g., Plaid). There is no documented developer portal, base URL, or downloadable specification.
+## Where to find this API
 
-- **Human URL:** [https://www.raymondjamesbank.com/](https://www.raymondjamesbank.com/)
-
-#### Tags
-
-- Data Aggregation
-- Open Finance
-
-#### Properties
-
-- [Documentation](https://www.raymondjamesbank.com/privacy-and-security-statements)
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.raymondjamesbank.com/)
-- [About](https://www.raymondjamesbank.com/more/about-us)
-- [Blog](https://www.raymondjamesbank.com/more/news-and-media)
-- [Privacy Policy](https://www.raymondjamesbank.com/privacy-and-security-statements)
-- [Terms of Service](https://www.raymondjamesbank.com/terms-of-use)
 - [Support](https://www.raymondjamesbank.com/more/contact-us)
+- [Blog](https://www.raymondjamesbank.com/more/news-and-media)
+- [Terms of service](https://www.raymondjamesbank.com/terms-of-use)
+- [Privacy policy](https://www.raymondjamesbank.com/privacy-and-security-statements)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 13.2** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 16.7 |
+| Access clarity | 27.6 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.0** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/raymond-james-bank/](https://apis.io/providers/raymond-james-bank/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Raymond James Bank: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/raymond-james-bank/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
